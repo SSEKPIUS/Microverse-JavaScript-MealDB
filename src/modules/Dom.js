@@ -1,6 +1,6 @@
 import ht2 from './images/heart2.png';
-// import countFoods from './countFoods.js';
-// import { addlikes, getlikes } from './likes.js';
+import countFoods from './countFoods.js';
+import { addlikes, getlikes } from './likes.js';
 // import { showPopup } from './popup.js';
 
 const container = document.querySelector('.food-container');
@@ -9,12 +9,9 @@ const container = document.querySelector('.food-container');
 const loadPopUp = (id) => {
   // showPopup(id);
 };
-
-// eslint-disable-next-line no-unused-vars
 const like = (element) => {
-  // addlikes(element);
+  addlikes(element);
 };
-
 const innerData = (meals) => {
   const holder = document.createElement('div');
   holder.classList.add('grid-container');
@@ -49,11 +46,9 @@ const innerData = (meals) => {
   });
   return holder;
 };
-
 const fillDom = (meals) => {
   container.append(innerData(meals));
-  // countFoods(meals.length);
-  // getlikes();
+  countFoods(meals.length);
+  getlikes();
 };
-
 export { fillDom, innerData };
