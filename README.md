@@ -3,34 +3,12 @@ Git/GitHub flow, webpack, linters, and workflows.
 
 <a name="readme-top"> </a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
 
-  <img src="logo.png" alt="logo" width="140"  height="auto"/>
+  <img src="https://www.themealdb.com/images/logo-small.png" alt="logo" width="140"  height="auto"/>
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>JavaScript capstone project</b></h3>
 
 </div>
 
@@ -64,22 +42,18 @@ After you're finished please remove all the comments and instructions!
 
 > Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**[TheMealDB]** The JavaScript capstone project is about building our own web application based on an external API. You will select an API that provides data about a topic that we like and then build the web app around it. The web app will have 2 or 3 user interfaces (depending on the size of your team):
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> LAMP Stack (Linux, Apache, MySQL, PHP)
-
-> MEAN Stack (MongoDB, Express.js, Angular.js, Node.js)
-
-> MERN Stack (MongoDB, Express.js, React.js, Node.js)
+> PEN Stack (PostgreSQL, Express.js, Node.js)
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://reactjs.org/">Node.js</a></li>
   </ul>
 </details>
 
@@ -101,11 +75,11 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+> Features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[list_food_list]**
+- **[like_food_item]**
+- **[comment_food_item]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,7 +89,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://ssekpius.github.io/Microverse-JavaScript-group-capstone-set-up-your-Kanban-board/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,7 +111,7 @@ Clone this repository to your desired folder:
 ```sh
   mkdir my-folder
   cd my-folder
-  git clone git@github.com:SSEKPIUS/Microverse-WebPack-Template.git  
+  git clone https://github.com/SSEKPIUS/Microverse-JavaScript-group-capstone-set-up-your-Kanban-board.git 
 ```
 
 ### Install
@@ -195,7 +169,13 @@ Example:
 - Twitter: [@twitterhandle](https://twitter.com/SSEK_PIUS)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/pius-ssekweyama-23665794)
 
-👤 **Author 2*
+👤 **Author 2**
+
+1. Precious Nhlapho
+ 
+- GitHub: [@githubhandle](https://github.com/Ambient567) 
+- Twitter: [@twitterhandle](https://twitter.com/Ambient567)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/precious-nhlapho-8b8b4a246/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -204,11 +184,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+> Features you we will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Reservations]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
