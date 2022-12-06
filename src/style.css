@@ -68,6 +68,7 @@ header .bubbles {
   display: inline-block;
   font-family: arial;
   position: relative;
+  margin-left: auto;
 }
 
 header .bubbles h1 {

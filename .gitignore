@@ -105,3 +105,4 @@ typings/
 
 #lighhouse cache files
 .lighthouseci/
+node_modules
