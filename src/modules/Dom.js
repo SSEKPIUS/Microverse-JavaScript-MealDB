@@ -1,13 +1,11 @@
 import ht2 from './images/heart2.png';
 import countFoods from './countFoods.js';
 import { addlikes, getlikes } from './likes.js';
-// import { showPopup } from './popup.js';
+import showPopup from './popup.js';
 
 const container = document.querySelector('.food-container');
-
-// eslint-disable-next-line no-unused-vars
 const loadPopUp = (id) => {
-  // showPopup(id);
+  showPopup(id);
 };
 const like = (element) => {
   addlikes(element);
