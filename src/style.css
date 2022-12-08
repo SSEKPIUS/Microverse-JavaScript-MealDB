@@ -200,7 +200,7 @@ main .grid-container input[type="button"]:hover {
   margin-right: auto;
 }
 
-.pop-up  .closebtn {
+.pop-up .closebtn {
   position: relative;
   align-self: end;
   text-decoration: none;
@@ -237,6 +237,7 @@ main .grid-container input[type="button"]:hover {
 .pop-up h3 {
   text-align: center;
 }
+
 .pop-up h3,
 .pop-up h4 {
   margin: 0.25em 0;
@@ -247,7 +248,7 @@ main .grid-container input[type="button"]:hover {
 }
 
 .pop-up h4 span,
-.pop-up h3 span  {
+.pop-up h3 span {
   color: gray;
 }
 
@@ -266,9 +267,10 @@ main .grid-container input[type="button"]:hover {
   font-style: italic;
 }
 
-.pop-up  #form {
+.pop-up #form {
   flex-direction: column;
-  align-items: flex-start;margin-bottom: 3em;
+  align-items: flex-start;
+  margin-bottom: 3em;
 }
 
 .pop-up ::placeholder {
@@ -323,4 +325,3 @@ footer .f-bottom {
   width: 100%;
   height: 1.5em;
 }
-
