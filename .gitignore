@@ -106,3 +106,4 @@ typings/
 #lighhouse cache files
 .lighthouseci/
 node_modules
+.DS_Store
