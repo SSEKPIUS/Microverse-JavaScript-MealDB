@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  max-width: 1550px;
+  max-width: 1050px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -38,7 +38,7 @@ header {
 header > div {
   display: flex;
   align-items: center;
-  gap: 8em;
+  gap: 1em;
 }
 
 header .fd-number {
@@ -68,6 +68,7 @@ header .bubbles {
   display: inline-block;
   font-family: arial;
   position: relative;
+  margin-left: auto;
 }
 
 header .bubbles h1 {
@@ -172,6 +173,135 @@ main .grid-container input[type="button"]:hover {
 
 /* pop up */
 
+.pop-up {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(71, 68, 68);
+  overflow: auto;
+  height: 100vh;
+}
+
+.pop-up .popup-details {
+  border: none;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 60%;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pop-up .closebtn {
+  position: relative;
+  align-self: end;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: rgba(71, 68, 68, 0.411);
+  margin-right: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.pop-up .closebtn:hover {
+  color: rgb(71, 68, 68);
+}
+
+.pop-up .meal {
+  width: 100%;
+  text-align: center;
+}
+
+.pop-up .meal img {
+  width: 95%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.pop-up .flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.pop-up h2,
+.pop-up h3 {
+  text-align: center;
+}
+
+.pop-up h3,
+.pop-up h4 {
+  margin: 0.25em 0;
+}
+
+.pop-up h4 {
+  align-items: center;
+}
+
+.pop-up h4 span,
+.pop-up h3 span {
+  color: gray;
+}
+
+.pop-up .comments-div {
+  width: 100%;
+  margin-bottom: 2em;
+  padding: 0 2em;
+}
+
+.pop-up .comments-div span {
+  margin: 0 0.2em;
+  font-size: 0.9em;
+}
+
+.pop-up .no-comment {
+  font-style: italic;
+}
+
+.pop-up #form {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 3em;
+}
+
+.pop-up ::placeholder {
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.pop-up .name-field,
+.pop-up textarea {
+  box-shadow: 1px 1px;
+  padding: 5px;
+  border: 3px solid rgb(71, 68, 68);
+}
+
+.pop-up .add-comment-btn {
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid black;
+  box-shadow: 3px 3px;
+  font-weight: bold;
+  color: darkgrey;
+  background-color: #fff;
+  width: 100%;
+}
+
+.pop-up .add-comment-btn:hover {
+  outline: none;
+  background: rgb(205, 158, 41);
+  color: white;
+}
+
 /* footer */
 
 footer {
@@ -187,6 +317,7 @@ footer .f-top {
   border-top: 1px solid rgba(0, 0, 0, 0.473);
   padding: 1.5em 0.5em;
   font-size: x-small;
+  text-align: center;
 }
 
 footer .f-bottom {
