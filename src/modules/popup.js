@@ -1,5 +1,4 @@
 import { generateComment, addNewComment } from './comment.js';
-// import updateCounter from './countComments.js';
 
 export const fetchMealData = async (id) => {
   const mealDbApi = `https://themealdb.com/api/json/v1/1/lookup.php?i=${id}`;
@@ -23,10 +22,6 @@ const addCommentEvent = async () => {
     const commentParagraph = await generateComment(addCommentBtn.id);
     commentDiv.innerHTML = '';
     commentDiv.append(commentParagraph);
-
-    // const commentCountSpan = document.querySelector('#comment-counter');
-    // const commentNumbers = updateCounter();
-    // commentCountSpan.textContent = `${commentNumbers}`;
 
     form.reset();
   });
@@ -77,10 +72,6 @@ export const showPopup = async (id) => {
   const commentDiv = document.querySelector('.comments-div');
   const commentParagraph = await generateComment(id);
   commentDiv.append(commentParagraph);
-
-  //   const commentCountSpan = document.querySelector('#comment-counter');
-  //   const commentNumbers = updateCounter();
-  //   commentCountSpan.textContent = `${commentNumbers}`;
 
   popupSection.style.display = 'block';
   addCommentEvent();
