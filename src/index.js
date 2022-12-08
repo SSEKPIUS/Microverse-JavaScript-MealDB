@@ -119,14 +119,15 @@ const innerData = (meals) => {
       loadPopUp(meal.idMeal);
     });
     div.querySelector('.like').addEventListener('click', (e) => {
-      addlikes(e.target.parentNode.parentNode.parentNode.querySelector('#idCategory').innerText);
+      addlikes(e);
     });
     holder.appendChild(div);
   });
   return holder;
 };
 
-const addlikes = async (itemId) => {
+const addlikes = async (e) => {
+  const itemId = e.target.parentNode.parentNode.parentNode.querySelector('#idCategory').innerText;
   await $.post(
     `${process.env.BaseURL}likes/`,
     {
@@ -134,7 +135,9 @@ const addlikes = async (itemId) => {
     },
     (data, status) => {
       if (status === 'success') {
-        load();
+        const cVAL = parseInt(e.target.parentNode.parentNode.parentNode.querySelector('.likes-count').innerText.replace('likes', '').trim(), 10) + 1;
+        e.target.parentNode.parentNode.parentNode.querySelector('.likes-count').innerHTML = `${cVAL} <span> likes</span>`;
+        e.target.parentNode.parentNode.parentNode.querySelector('.like img').src = ht;
       }
     },
   );
@@ -160,6 +163,7 @@ const getlikes = async () => {
 };
 
 const fillDom = (meals) => {
+  container.innerHTML = '';
   container.append(innerData(meals));
   countFoods(meals.length);
   getlikes();
