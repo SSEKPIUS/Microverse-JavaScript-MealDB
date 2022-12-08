@@ -1,6 +1,10 @@
 name: Linters
 
+<<<<<<< HEAD
 on: [pull_request, push]
+=======
+on: [pull_request]
+>>>>>>> 18-05pt-set-up-the-project-with-webpack-and-jest-group-task
 
 env:
   FORCE_COLOR: 1

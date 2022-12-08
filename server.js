@@ -11,8 +11,11 @@ app.use(
     publicPath: config.output.publicPath,
   }),
 );
+<<<<<<< HEAD
 
 // Serve the files on port 3000.
+=======
+>>>>>>> 18-05pt-set-up-the-project-with-webpack-and-jest-group-task
 app.listen(3000, () => {
   console.log('Example app listening on port 3000!\n');
 });

@@ -80,7 +80,11 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
+<<<<<<< HEAD
 dist
+=======
+
+>>>>>>> 18-05pt-set-up-the-project-with-webpack-and-jest-group-task
 
 # Gatsby files
 .cache/
